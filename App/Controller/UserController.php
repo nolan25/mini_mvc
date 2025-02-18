@@ -19,6 +19,10 @@ class UserController extends Controller
                     case 'delete':
                         // Appeler méthode delete()
                         break;
+                    case 'read':
+                            // Appeler méthode read()
+                        $this->read();
+                        break;
                     default:
                         throw new \Exception("Cette action n'existe pas : " . $_GET['action']);
                         break;
@@ -54,6 +58,12 @@ class UserController extends Controller
                 'error' => $e->getMessage()
             ]);
         } 
+
+    }
+
+    protected function read(){
+        $userRepository = new UserRepository();
+        $users = $userRepository->findAll();
 
     }
 

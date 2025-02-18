@@ -14,7 +14,7 @@
 * Vous devez créer ArticleController.php en ajoutant une action list qui appellera le repository et retournera le résultat à la vue.
 * Vous devez modifier Controller.php pour gérer le controleur Article
 * Vous devez créer la vue dans templates/article/list.php qui affiche uniquement le titre de l'article et un lien "Lire plus"
-* Mettre à jour le menu
+* Mettre à jour le menu voir les articles
 * On veut ensuite affiche le détail d'un article (quand on clique sur Lire plus")
   * Il faudra créer une action show qui récupère un article et le retourne à la vue
 
